@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    
+}
+
+header{
+    background: cadetblue;
+    text-align: center;
+}
+
+.logo{
+    color: white;
+    font-size: xx-large;
+    font-family: Neonderthaw;
+}
+header input{
+    margin: 20px auto;
+}

@@ -6,6 +6,7 @@ import NewsList from './components/news-list';
 class App extends React.Component {
 
     render(){
+  
     return (
         <>
             <Header/>

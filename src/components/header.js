@@ -5,11 +5,23 @@ import React from 'react';
      return date.getHours() + " : " + date.getMinutes() + " : " + date.getSeconds()
  }
 
-const Header = () => {
-    return <div>
-        <h1>Im The Header</h1>
-        <h1>The Time is : {getDate()}</h1>
-    </div>
+class Header extends React.Component {
+    render(){
+/*         let styles = {
+            header:{
+                background:'#03a9f4'
+            },
+            logo:{
+                color:'#fff',
+                textAlign:'center'
+            }
+        } */
+    return <header>
+        <div className='logo'>Im The LOGO in Header</div>
+        <div className='logo'>The Time is : {getDate()}</div>
+        <input></input>
+    </header>
+    }
 }
 
 export default Header

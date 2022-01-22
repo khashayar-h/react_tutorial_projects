@@ -1,11 +1,23 @@
 import React from 'react';
 
+
  const getDate = () => {
      const date = new Date()
      return date.getHours() + " : " + date.getMinutes() + " : " + date.getSeconds()
  }
 
+ const inputChange = () => {
+    console.log('I was Changed using ArrowFunction')
+ }
+
 class Header extends React.Component {
+
+    
+    
+     inputChangedMethod(event){
+         console.log('I was Changed using Method & the value is : ' + event.target.value)
+     }
+
     render(){
 /*         let styles = {
             header:{
@@ -17,9 +29,14 @@ class Header extends React.Component {
             }
         } */
     return <header>
-        <div className='logo'>Im The LOGO in Header</div>
+        <div className='logo'
+            onClick={()=>{console.log('I was Clicked')}}
+        >Im The LOGO in Header</div>
+
         <div className='logo'>The Time is : {getDate()}</div>
-        <input></input>
+        <input
+             onChange={this.inputChangedMethod/* ()=>{console.log('I was Changed')} */}
+        ></input>
     </header>
     }
 }

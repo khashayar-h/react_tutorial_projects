@@ -35,7 +35,7 @@ class Header extends React.Component {
 
         <div className='logo'>The Time is : {getDate()}</div>
         <input
-             onChange={this.inputChangedMethod/* ()=>{console.log('I was Changed')} */}
+             onChange={this.inputChangedMethod/* inputChange *//* (event)=>this.inputChangedMethod(event) *//* ()=>{console.log('I was Changed')} */}
         ></input>
     </header>
     }
